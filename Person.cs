@@ -1,16 +1,20 @@
 ﻿using System;
 
-/// <summary>
-/// Introduces person
-/// </summary>
-public class Person
+namespace FirstCmdLineApp.MovingParts
 {
-    public string Name;
-    public void Introduce()
+    public class Person
     {
-        Console.WriteLine("Hi, " + Name);
-        System.Threading.Thread.Sleep(1000);
-        
+        public string Name;
+
+        public void Introduce()
+        {
+            Console.WriteLine("Hi, " + Name);
+        }
+
+        public void Present()
+        {
+            Console.WriteLine("I am " + Name);
+        }
+
     }
-    
-    }
+}
